@@ -1,0 +1,13 @@
+for lex programgcc
+
+lex filename
+gcc lex.yy.c -lfl
+./a.out
+
+
+for yacc
+
+lex filename.l
+yacc -d filename.y
+gcc lex.yy.c y.tab.c -lfl
+./a.out
