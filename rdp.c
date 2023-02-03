@@ -60,7 +60,7 @@ void F()
 		if (input [i]==')')
 			i++;
 	}
-	else if(isalpha(input[i]))
+	else if(isalpha(input[i]) || (isalnum(input[i])))
 	{
 		i++;
 		while ((isalnum(input[i])) || (input[i]=='-'))
